@@ -3,21 +3,16 @@ I developed Data visualization pie chart
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pie Chart Data Visualization</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dynamic Data Visualization</title>
 </head>
 <body>
-    <h1>Pie Chart Data Visualization</h1>
-    <form id="dataForm">
-        <label for="dataInput">Enter data (comma-separated numbers):</label>
-        <input type="text" id="dataInput" name="dataInput" required>
-        <button type="submit">Visualize Pie Chart</button>
+    <center>
+    <marquee width="450" height="100"><h1>DATA VISUALIZATION</h1></marquee>
+    <form action="/visualize" method="post">
+        <label for="data">Enter data (comma-separated):</label><br>
+        <input type="text" id="data" name="data" required><br><br>
+        <input type="submit" value="Visualize">
     </form>
-    <div class="chart-container">
-        <canvas id="pieChart"></canvas>
-    </div>
-
-    <script src="script.js"></script>
+</center>
 </body>
 </html>
